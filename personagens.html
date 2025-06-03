@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personagens | HxH: Arco das Formigas Quimera</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            object-position: top;
+        }
+         .modal-body .info-label {
+            font-weight: 500; 
+            color: var(--bs-gray-400); 
+        }
+    </style>
+</head>
+
+<body style="padding-top: 70px;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/HxHLogo1.png" alt="Hunter x Hunter Logo" style="max-height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sinopse.html">Sinopse</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="personagens.html">Personagens</a></li>
+                        <li class="nav-item"><a class="nav-link" href="trilha.html">Trilha Sonora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">Elenco de uma Guerra</h1>
+            <p class="lead text-body-secondary">Conheça os principais envolvidos na batalha pelo destino da humanidade.</p>
+        </div>
+
+        <ul class="nav nav-tabs justify-content-center mb-4" id="personagensTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="hunters-tab" data-bs-toggle="tab" data-bs-target="#hunters-tab-pane" type="button" role="tab" aria-controls="hunters-tab-pane" aria-selected="true">Hunters</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="quimeras-tab" data-bs-toggle="tab" data-bs-target="#quimeras-tab-pane" type="button" role="tab" aria-controls="quimeras-tab-pane" aria-selected="false">Guarda Real & Rei</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="humanos-tab" data-bs-toggle="tab" data-bs-target="#humanos-tab-pane" type="button" role="tab" aria-controls="humanos-tab-pane" aria-selected="false">Humanos & Aliados</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="personagensTabContent">
+            
+            <div class="tab-pane fade show active" id="hunters-tab-pane" role="tabpanel" aria-labelledby="hunters-tab">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Netero.jpeg" class="card-img-top" alt="Isaac Netero"><div class="card-body d-flex flex-column"><h5 class="card-title">Isaac Netero</h5><p class="card-text">O carismático e imensamente poderoso 12º Presidente da Associação Hunter...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalNetero">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Gon.jpeg" class="card-img-top" alt="Gon Freecss"><div class="card-body d-flex flex-column"><h5 class="card-title">Gon Freecss</h5><p class="card-text">Jovem Hunter com um potencial latente extraordinário...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalGon">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Killua.jpeg" class="card-img-top" alt="Killua Zoldyck"><div class="card-body d-flex flex-column"><h5 class="card-title">Killua Zoldyck</h5><p class="card-text">Herdeiro da renomada família de assassinos Zoldyck e melhor amigo de Gon...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKillua">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Kite.jpg" class="card-img-top" alt="Kite"><div class="card-body d-flex flex-column"><h5 class="card-title">Kite</h5><p class="card-text">Um Hunter profissional e discípulo de Ging Freecss...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKite">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Morel.jpeg" class="card-img-top" alt="Morel Mackernasey"><div class="card-body d-flex flex-column"><h5 class="card-title">Morel Mackernasey</h5><p class="card-text">Experiente Single-Star Sea Hunter, conhecido por sua calma...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalMorel">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Knov.jpeg" class="card-img-top" alt="Knov"><div class="card-body d-flex flex-column"><h5 class="card-title">Knov</h5><p class="card-text">Hunter veterano com uma habilidade Nen de conjuração espacial crucial...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKnov">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH-Shoot.jpg" class="card-img-top" alt="Shoot McMahon"><div class="card-body d-flex flex-column"><h5 class="card-title">Shoot McMahon</h5><p class="card-text">Hunter de Bestas e discípulo de Morel, que luta constantemente...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalShoot">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Knuckle.jpeg" class="card-img-top" alt="Knuckle Bine"><div class="card-body d-flex flex-column"><h5 class="card-title">Knuckle Bine</h5><p class="card-text">Hunter de Bestas de sangue quente e coração mole...</p><button class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKnuckle">Ver Detalhes</button></div></div></div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="quimeras-tab-pane" role="tabpanel" aria-labelledby="quimeras-tab">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow border-2 border-danger">
+                            <img src="img/HxH Meruem.jpg" class="card-img-top" alt="Meruem">
+                            <div class="card-body d-flex flex-column text-center">
+                                <h5 class="card-title">Meruem, O Rei</h5>
+                                <p class="card-text">O Rei das Formigas Quimera, nascido para ser o pináculo da evolução...</p>
+                                <button class="btn btn-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalMeruem">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Pitou.jpg" class="card-img-top" alt="Neferpitou"><div class="card-body d-flex flex-column"><h5 class="card-title">Neferpitou</h5><p class="card-text">A primeira dos três Guardas Reais a nascer, com aparência felina...</p><button class="btn btn-outline-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalPitou">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Pouf.jpeg" class="card-img-top" alt="Shaiapouf"><div class="card-body d-flex flex-column"><h5 class="card-title">Shaiapouf</h5><p class="card-text">O estrategista e mais emotivo da Guarda Real, com uma lealdade fanática...</p><button class="btn btn-outline-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalPouf">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Youpi.jpg" class="card-img-top" alt="Menthuthuyoupi"><div class="card-body d-flex flex-column"><h5 class="card-title">Menthuthuyoupi</h5><p class="card-text">O membro da Guarda Real composto puramente de bestas mágicas...</p><button class="btn btn-outline-danger mt-auto" data-bs-toggle="modal" data-bs-target="#modalYoupi">Ver Detalhes</button></div></div></div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="humanos-tab-pane" role="tabpanel" aria-labelledby="humanos-tab">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH-Komugi.jpeg " class="card-img-top" alt="Komugi"><div class="card-body d-flex flex-column"><h5 class="card-title">Komugi</h5><p class="card-text">Uma jovem e desajeitada garota cega que é a invicta campeã mundial...</p><button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalKomugi">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Colt.jpg" class="card-img-top" alt="Colt"><div class="card-body d-flex flex-column"><h5 class="card-title">Colt</h5><p class="card-text">Um dos primeiros líderes de esquadrão das Formigas Quimera a nascer...</p><button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalColt">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH-Palm.jpeg" class="card-img-top" alt="Palm Siberia"><div class="card-body d-flex flex-column"><h5 class="card-title">Palm Siberia</h5><p class="card-text">Uma Hunter e aprendiz de Knov, conhecida por sua personalidade intensa...</p><button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalPalm">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH IkalgoPolvo.jpg" class="card-img-top" alt="Ikalgo"><div class="card-body d-flex flex-column"><h5 class="card-title">Ikalgo</h5><p class="card-text">Uma Formiga Quimera com aparência de polvo, inicialmente um inimigo...</p><button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalIkalgo">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Meleoron.jpg" class="card-img-top" alt="Meleoron"><div class="card-body d-flex flex-column"><h5 class="card-title">Meleoron</h5><p class="card-text">Uma Formiga Quimera com aparência de camaleão, possuidor de uma habilidade Nen única...</p><button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalMeleoron">Ver Detalhes</button></div></div></div>
+                    <div class="col"><div class="card h-100 shadow"><img src="img/HxH Biscuit.jpeg" class="card-img-top" alt="Biscuit Krueger"><div class="card-body d-flex flex-column"><h5 class="card-title">Biscuit Krueger</h5><p class="card-text">Experiente Double-Star Hunter e mestra de Nen que treinou Gon e Killua...</p><button class="btn btn-outline-secondary mt-auto" data-bs-toggle="modal" data-bs-target="#modalBisky">Ver Detalhes</button></div></div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalNetero" aria-labelledby="modalNeteroLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalNeteroLabel">Isaac Netero</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter (Presidente)</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Intensificação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Representa a última esperança da humanidade. Lidera a equipe de extermínio e se envolve na batalha final contra Meruem.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Ichirō Nagai / Banjō Ginga</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalGon" aria-labelledby="modalGonLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalGonLabel">Gon Freecss</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Intensificação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Movido pela vingança após testemunhar a crueldade de Neferpitou, sacrifica seu potencial para obter um poder temporário e absoluto.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dubladora Japonesa:</div><div class="col-sm-7 info-value">Megumi Han</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+    
+    <div class="modal fade" id="modalKillua" aria-labelledby="modalKilluaLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalKilluaLabel">Killua Zoldyck</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter / Família Zoldyck</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Transmutação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> O suporte emocional e tático de Gon. Desenvolve sua habilidade Godspeed (Kanmuru) e supera o controle mental de seu irmão para proteger seus amigos.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dubladora Japonesa:</div><div class="col-sm-7 info-value">Mariya Ise</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalKite" aria-labelledby="modalKiteLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalKiteLabel">Kite</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Conjuração</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Sua morte brutal nas mãos de Neferpitou é o evento que desencadeia a sede de vingança de Gon e define o tom sombrio de todo o arco.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Shūichi Ikeda</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalMorel" aria-labelledby="modalMorelLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalMorelLabel">Morel Mackernasey</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter (Single-Star Sea Hunter)</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Manipulação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Um dos pilares da equipe de extermínio, usando sua habilidade de fumaça (Deep Purple) para criar distrações e lutar estrategicamente.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Taiten Kusunoki</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalKnov" aria-labelledby="modalKnovLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalKnovLabel">Knov</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Conjuração</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Sua habilidade de portais (Hide and Seek) é a peça central do plano de invasão, mas ele sofre um colapso mental ao sentir a aura da Guarda Real.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Shin-ichiro Miki</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalShoot" aria-labelledby="modalShootLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalShootLabel">Shoot McMahon</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter (Hunter de Bestas)</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Manipulação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Luta para superar sua personalidade tímida e covarde, conseguindo provar seu valor e evoluir como Hunter em uma luta feroz contra Menthuthuyoupi.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Yūji Ueda</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalKnuckle" aria-labelledby="modalKnuckleLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalKnuckleLabel">Knuckle Bine</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter (Hunter de Bestas)</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Emissão</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Seu jeito durão esconde um coração mole. Sua habilidade complexa, A.P.R., é fundamental para medir e "falir" a aura de seus oponentes.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Wataru Takagi</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalMeruem" aria-labelledby="modalMeruemLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalMeruemLabel">Meruem</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Formigas Quimera (Rei)</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Especialização</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Habilidade Principal:</div><div class="col-sm-8 info-value">Síntese de Aura</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> O ser supremo nascido para governar. Sua jornada vai da tirania absoluta à descoberta de sua própria identidade e humanidade através do Gungi.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Kōki Uchiyama</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalPitou" aria-labelledby="modalPitouLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalPitouLabel">Neferpitou</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Guarda Real</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Especialização</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Habilidade Principal:</div><div class="col-sm-8 info-value">Doctor Blythe, Terpsichora</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Sua imensa aura e crueldade inicial estabelecem o nível da ameaça. É a causa direta da transformação de Gon.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dubladora Japonesa:</div><div class="col-sm-7 info-value">Ayumi Fujimura</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalPouf" aria-labelledby="modalPoufLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalPoufLabel">Shaiapouf</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Guarda Real</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Manipulação</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Habilidade Principal:</div><div class="col-sm-8 info-value">Beelzebub</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Tenta manipular o Rei para que ele se mantenha um tirano puro, vendo a influência de Komugi como uma contaminação perigosa.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Wataru Hatano</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalYoupi" aria-labelledby="modalYoupiLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalYoupiLabel">Menthuthuyoupi</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Guarda Real</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Emissão</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Habilidade Principal:</div><div class="col-sm-8 info-value">Metamorfose, Explosão de Raiva</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> O escudo do Rei, responsável por lutar contra múltiplos Hunters de elite. Surpreendentemente, desenvolve um senso de honra em meio ao combate.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Fumihiko Tachiki</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalKomugi" aria-labelledby="modalKomugiLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalKomugiLabel">Komugi</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Humana</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Desconhecido (Desperta durante o jogo)</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> A genial e imbatível campeã mundial de Gungi. É a única personagem que consegue influenciar o Rei, ensinando-o sobre individualidade, valor e, finalmente, humanidade.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dubladora Japonesa:</div><div class="col-sm-7 info-value">Aya Endō</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalColt" aria-labelledby="modalColtLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalColtLabel">Colt</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Formigas Quimera (Ex-Líder de Esquadrão)</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Desconhecido</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Um dos primeiros a nascer. Sua lealdade à Rainha e as memórias de sua irmã em sua vida passada o levam a se aliar aos Hunters, servindo como uma ponte entre as duas espécies.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Tatsuhisa Suzuki</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalPalm" aria-labelledby="modalPalmLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalPalmLabel">Palm Siberia</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter / Formiga Quimera</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Intensificação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Uma figura trágica. Inicia como aliada dos Hunters, é capturada e se torna um experimento da Guarda Real. Mesmo transformada, sua forte vontade e sentimentos por Gon a permitem manter sua consciência.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dubladora Japonesa:</div><div class="col-sm-7 info-value">Kikuko Inoue</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalIkalgo" aria-labelledby="modalIkalgoLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalIkalgoLabel">Ikalgo</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Formiga Quimera (Ex-Líder de Esquadrão), Aliado dos Hunters</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Manipulação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Comove-se com a lealdade de Killua e se torna um aliado crucial. Usa sua habilidade de habitar e controlar corpos para ajudar na infiltração do palácio.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Kenyū Horiuchi</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalMeleoron" aria-labelledby="modalMeleoronLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalMeleoronLabel">Meleoron</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Formigas Quimera (Ex-Líder de Esquadrão), Aliado dos Hunters</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Especialização</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Habilidade Principal:</div><div class="col-sm-8 info-value">God's Alibi & God's Accomplice</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Sua habilidade de anular sua própria presença é a espinha dorsal de todo o plano de ataque dos Hunters.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dublador Japonês:</div><div class="col-sm-7 info-value">Nobuo Tobita</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+    <div class="modal fade" id="modalBisky" aria-labelledby="modalBiskyLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h1 class="modal-title fs-5" id="modalBiskyLabel">Biscuit Krueger</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body">
+        <div class="row mb-2"><div class="col-sm-4 info-label">Afiliação:</div><div class="col-sm-8 info-value">Associação Hunter (Double-Star Treasure Hunter)</div></div>
+        <div class="row mb-2"><div class="col-sm-4 info-label">Tipo de Nen:</div><div class="col-sm-8 info-value">Transmutação</div></div>
+        <p class="mt-3"><strong>Papel no Arco:</strong> Embora não participe da invasão, seu papel é fundamental. Ela treina Gon e Killua para que eles atinjam o nível de poder necessário para sobreviver aos desafios que encontrarão em NGL.</p>
+        <hr class="my-3">
+        <div class="row mb-2"><div class="col-sm-5 info-label">Dubladora Japonesa:</div><div class="col-sm-7 info-value">Chisa Yokoyama</div></div>
+        <div class="row mb-2"><div class="col-sm-5 info-label">Estúdio de Animação:</div><div class="col-sm-7 info-value">Madhouse</div></div>
+    </div></div></div></div>
+
+
+    <footer class="py-4 mt-auto border-top border-secondary-subtle">
+        <div class="container text-center">
+            <p class="text-body-secondary">Site de fã dedicado à obra de Yoshihiro Togashi. 2025.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

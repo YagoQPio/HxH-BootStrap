@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trilha Sonora Épica | HxH: Arco das Formigas Quimera</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        .playlist-btn {
+            font-size: 1.25rem;
+            padding: 0.75rem 1.5rem;
+        }
+        .track-description-offcanvas { 
+            font-size: 0.95rem;
+            color: var(--bs-gray-300);
+        }
+        .list-group-item {
+            background-color: var(--bs-dark-bg-subtle);
+        }
+        .offcanvas-title i {
+            font-size: 1.5rem; 
+        }
+    </style>
+</head>
+
+<body style="padding-top: 56px;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/hxh-logo1.png" alt="Hunter x Hunter Logo" style="height: 30px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sinopse.html">Sinopse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="personagens.html">Personagens</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="trilha.html">Trilha Sonora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold">A Melodia da Sobrevivência</h1>
+            <p class="lead text-body-secondary mt-2">Explore a inesquecível trilha sonora de Hunter x Hunter (2011), composta por Yoshihisa Hirano, que deu o tom épico e emocional ao arco das Formigas Quimera e a toda a série.</p>
+        </div>
+
+        <section class="mb-5 text-center">
+            <h2 class="mb-4">Ouça nas Plataformas</h2>
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a href="https://www.youtube.com/playlist?list=PL3qAqa1jr25VTEW5WPu6hDT8r7ND_Y360" class="btn btn-danger btn-lg playlist-btn px-4" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-youtube me-2"></i>Playlist no YouTube
+                </a>
+                <a href="https://open.spotify.com/playlist/2ZL1kUIBxKDV6CJLxPFSQA" class="btn btn-success btn-lg playlist-btn px-4" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-spotify me-2"></i>Playlist no Spotify
+                </a>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Faixas Memoráveis (Clique para Ouvir)</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="list-group shadow-sm">
+                        <button type="button" class="list-group-item list-group-item-action p-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeparture" aria-controls="offcanvasDeparture">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">"Departure!" (Tema de Abertura)</h5>
+                                <small><i class="bi bi-play-circle-fill"></i></small>
+                            </div>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action p-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLastMission" aria-controls="offcanvasLastMission">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">"The Last Mission"</h5>
+                                <small><i class="bi bi-play-circle-fill"></i></small>
+                            </div>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action p-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRestriction" aria-controls="offcanvasRestriction">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">"Restriction and Pledge"</h5>
+                                <small><i class="bi bi-play-circle-fill"></i></small>
+                            </div>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action p-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKingdom" aria-controls="offcanvasKingdom">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">"Kingdom of Predators"</h5>
+                                <small><i class="bi bi-play-circle-fill"></i></small>
+                            </div>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action p-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLegend" aria-controls="offcanvasLegend">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">"Legend of the Martial Artist"</h5>
+                                <small><i class="bi bi-play-circle-fill"></i></small>
+                            </div>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action p-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasUnderstanding" aria-controls="offcanvasUnderstanding">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">"Understanding" / "In the Palace ~ Lamentoso"</h5>
+                                <small><i class="bi bi-play-circle-fill"></i></small>
+                            </div>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action p-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHyoriIttai" aria-controls="offcanvasHyoriIttai">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">"Hyōri Ittai" (Encerramento por Yuzu)</h5>
+                                <small><i class="bi bi-play-circle-fill"></i></small>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="my-5">
+
+        <section class="text-center">
+             <h2 class="mb-4">O Maestro por Trás da Emoção</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card text-bg-secondary shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoshihisa Hirano (平野 義久)</h5>
+                            <p class="card-text">Nascido em 7 de dezembro de 1971, na prefeitura de Wakayama, Japão. Hirano é o talentoso compositor responsável pela trilha sonora atmosférica e profundamente emocionante de Hunter x Hunter (2011).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasDeparture" aria-labelledby="offcanvasDepartureLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDepartureLabel"><i class="bi bi-music-note-beamed me-2"></i>"Departure!"</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="track-description-offcanvas">A icônica abertura que acompanha Gon em suas aventuras, cheia de esperança e espírito de exploração.</p>
+            <a href="https://www.youtube.com/watch?v=faqmNf_fZlE" class="btn btn-danger mt-3 w-100" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-2"></i>Ouvir no YouTube</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasLastMission" aria-labelledby="offcanvasLastMissionLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLastMissionLabel"><i class="bi bi-music-note-beamed me-2"></i>"The Last Mission"</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="track-description-offcanvas">Uma das faixas mais poderosas e trágicas, frequentemente associada à determinação final de Netero em sua luta contra Meruem.</p>
+            <a href="https://www.youtube.com/watch?v=xnp9XY3R09U" class="btn btn-danger mt-3 w-100" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-2"></i>Ouvir no YouTube</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasRestriction" aria-labelledby="offcanvasRestrictionLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRestrictionLabel"><i class="bi bi-music-note-beamed me-2"></i>"Restriction and Pledge"</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="track-description-offcanvas">Evoca o peso das escolhas e o poder perigoso dos votos de Nen, marcando momentos de sacrifício e poder extremo, como a transformação de Gon.</p>
+            <a href="https://www.youtube.com/watch?v=gbJwtJG-JbM" class="btn btn-danger mt-3 w-100" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-2"></i>Ouvir no YouTube</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasKingdom" aria-labelledby="offcanvasKingdomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasKingdomLabel"><i class="bi bi-music-note-beamed me-2"></i>"Kingdom of Predators"</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="track-description-offcanvas">Uma música sinistra e opressora, perfeita para representar a ameaça avassaladora das Formigas Quimera e a aura do Rei Meruem.</p>
+            <a href="https://www.youtube.com/watch?v=q43wzP6A1CM" class="btn btn-danger mt-3 w-100" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-2"></i>Ouvir no YouTube</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasLegend" aria-labelledby="offcanvasLegendLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLegendLabel"><i class="bi bi-music-note-beamed me-2"></i>"Legend of the Martial Artist"</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="track-description-offcanvas">Tema que reflete a sabedoria, o poder e a longa jornada de treinamento de Isaac Netero.</p>
+            <a href="https://www.youtube.com/watch?v=QF5RedxgHKA" class="btn btn-danger mt-3 w-100" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-2"></i>Ouvir no YouTube</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasUnderstanding" aria-labelledby="offcanvasUnderstandingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasUnderstandingLabel"><i class="bi bi-music-note-beamed me-2"></i>"Understanding" / "In the Palace ~ Lamentoso"</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="track-description-offcanvas">Peças comoventes e melancólicas, frequentemente tocadas durante os momentos de introspecção e a trágica conexão entre Meruem e Komugi.</p>
+            <a href="https://www.youtube.com/watch?v=_Zyx5v2_Cio" class="btn btn-danger mt-3 w-100" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-2"></i>Ouvir no YouTube</a>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasHyoriIttai" aria-labelledby="offcanvasHyoriIttaiLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasHyoriIttaiLabel"><i class="bi bi-music-note-beamed me-2"></i>"Hyōri Ittai" (Encerramento)</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="track-description-offcanvas">A música de encerramento do arco, por Yuzu, capturando perfeitamente a dualidade, a complexidade e os temas agridoces da saga das Formigas Quimera.</p>
+            <a href="https://www.youtube.com/watch?v=MCYm453CE6Y" class="btn btn-danger mt-3 w-100" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube me-2"></i>Ouvir no YouTube</a>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-auto border-top border-secondary-subtle">
+        <div class="container text-center">
+            <p class="text-body-secondary">© 2025 | Um projeto de fã para fãs da obra de Yoshihiro Togashi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
